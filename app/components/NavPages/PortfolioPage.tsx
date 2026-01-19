@@ -9,8 +9,8 @@ export default function PortfolioPage() {
         <UnderLine />
       </div>
       <div className="mt-8 grid grid-cols-2">
-        <ProjectComponent image="voltex.JPG" heading="Self Hosted Paas" description="Devops" link="" />
-        <ProjectComponent image="social.JPG" heading="Social Network" description="Full Stack" link="" />
+        <ProjectComponent image="voltex.JPG" heading="Self Hosted Paas" description="Devops" link="https://github.com/mohithingorani/Platform-as-a-Service" />
+        <ProjectComponent image="social.JPG" heading="Social Network" description="Full Stack" link="https://github.com/mohithingorani/SOCIAL-NETWORK" />
       </div>
     </div>
   );

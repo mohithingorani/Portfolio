@@ -1,5 +1,7 @@
+"use client"
 import Image from "next/image";
 import { EyeIcon } from "./Icons";
+import { useRouter } from "next/navigation";
 
 export default function ProjectComponent({
   image,
@@ -12,6 +14,7 @@ export default function ProjectComponent({
   heading:string,
   description:string
 }) {
+  const router = useRouter();
   return (
     <div className="mb-6">
       <div className="group cursor-pointer relative w-80 h-40 overflow-hidden rounded-xl">
@@ -29,8 +32,8 @@ export default function ProjectComponent({
         bg-black/50 opacity-0 transition-opacity duration-300
         group-hover:opacity-100"
         >
-          <span className=" w-15 h-15 flex justify-center items-center rounded-md bg-[#1e1e1f] p-2">
-            <EyeIcon className="opacity-80" />
+          <span onClick={()=>router.push(link)} className=" w-15 h-15 flex justify-center items-center rounded-md bg-[#1e1e1f] p-2">
+            <EyeIcon className="opacity-60 hover:opacity-100" />
           </span>
         </div>
       </div>
