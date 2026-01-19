@@ -7,6 +7,7 @@ import { useState } from "react";
 import { CurrentPage } from "./types";
 import AboutPage from "./components/NavPages/AboutPage";
 import ResumePage from "./components/NavPages/Resume";
+import PortfolioPage from "./components/NavPages/PortfolioPage";
 
 export default function Home() {
   const [currentPage, setCurrentPage] = useState<CurrentPage>(
@@ -45,6 +46,7 @@ export default function Home() {
           </div>
           {currentPage === CurrentPage.about && <AboutPage />}
           {currentPage===CurrentPage.resume && <ResumePage/>}
+          {currentPage===CurrentPage.portfolio && <PortfolioPage/>}
         </div>
       </div>
     </div>

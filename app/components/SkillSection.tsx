@@ -25,7 +25,7 @@ export default function Skills() {
           </button>
         ))}
       </div>
-      <div className="w-full h-[360px]">
+      <div className="w-full h-90 ">
         <SkillRadar data={currentDomain.data} labels={currentDomain.labels} />
       </div>
     </div>
