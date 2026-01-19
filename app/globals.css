@@ -44,3 +44,36 @@ body {
 .poppins-bold-italic { font-family: "Poppins", sans-serif; font-weight: 700; font-style: italic; }
 .poppins-extrabold-italic { font-family: "Poppins", sans-serif; font-weight: 800; font-style: italic; }
 .poppins-black-italic { font-family: "Poppins", sans-serif; font-weight: 900; font-style: italic; }
+
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.35) rgba(255, 255, 255, 0.05);
+}
+
+/* Chrome, Edge, Safari */
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 999px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    rgba(234, 179, 8, 0.5),
+    rgba(234, 179, 8, 0.25)
+  );
+  border-radius: 999px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: rgba(234, 179, 8, 0.7);
+}
+*::-webkit-scrollbar-corner {
+  background: transparent;
+}
