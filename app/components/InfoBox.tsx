@@ -1,4 +1,4 @@
-import { CalendarIcon, LocationIcon, MailIcon, PhoneIcon } from "./Icons";
+import {  CalendarIcon, LocationIcon, MailIcon, PhoneIcon } from "./Icons";
 
 export function InfoBox({
   heading,
@@ -20,7 +20,7 @@ export function InfoBox({
     <div className="flex justify-start items-center gap-5 poppins-normal w-full">
       <div className="relative rounded-xl p-px bg-linear-to-br from-white/20 via-white/5 to-transparent ">
         <div className="rounded-xl bg-[#1e1e1f] p-3">
-          {Icon && <Icon className="w-5 h-5 text-yellow-300" />}
+          {Icon && <Icon className="w-5 h-5 text-yellow-200" />}
         </div>
       </div>
       <div className="text-xs max-w-full flex flex-col gap-1">
