@@ -5,7 +5,7 @@ import { DoingBox } from "../DoingBox";
 export default function AboutPage() {
   return (
     <div>
-      <div className=" poppins-semibold text-3xl">About Me</div>
+      <div className=" poppins-semibold text-3xl ">About Me</div>
       <div className="my-4 ">
         <UnderLine />
       </div>

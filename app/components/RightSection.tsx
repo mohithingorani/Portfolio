@@ -49,7 +49,7 @@ export default function RightSection() {
           })}
         </div>
       </div>
-      <div>
+      <div className="lg:pb-0 pb-10" >
       {currentPage === CurrentPage.about && <AboutPage />}
       {currentPage === CurrentPage.resume && <ResumePage />}
       {currentPage === CurrentPage.portfolio && <PortfolioPage />}
