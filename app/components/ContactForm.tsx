@@ -28,7 +28,7 @@ export default function ContactForm() {
     }
   }
   return (
-    <div>
+    <div className="">
       <ToastContainer toastClassName={"bg-transparent shadow-none p-0"} closeButton={false}/>
       <div className="text-white/60 text-sm">
         Contact me directly at mohithingorani2003@gmail.com or through this

@@ -13,7 +13,7 @@ export default function RightSection() {
   );
 
   return (
-    <div className="w-full  overflow-x-hidden relative p-4 md:p-5 lg:p-8 border-[0.2px] border-white/10 rounded-3xl bg-[#1e1e1f] ">
+    <div className="w-full h-full  overflow-x-hidden relative p-4 md:p-5 lg:p-8 border-[0.2px] border-white/10 rounded-3xl bg-[#1e1e1f] ">
       <div className="block sm:hidden fixed w-full bottom-0 left-0 z-50 ">
         <div
           className="flex rounded-t-xl poppins-light border-white/20   backdrop-blur-[15px]
@@ -49,10 +49,12 @@ export default function RightSection() {
           })}
         </div>
       </div>
+      <div className="h-full ">
       {currentPage === CurrentPage.about && <AboutPage />}
       {currentPage === CurrentPage.resume && <ResumePage />}
       {currentPage === CurrentPage.portfolio && <PortfolioPage />}
       {currentPage === CurrentPage.contact && <ContactPage />}
+    </div>
     </div>
   );
 }
