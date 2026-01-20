@@ -19,7 +19,7 @@ export default function RightSection() {
           className="flex rounded-t-xl poppins-light border-white/20   backdrop-blur-[15px]
   bg-[rgba(43,43,44,0.75)]
   border
- text-xs justify-between items-center px-20 py-5"
+ text-xs justify-between items-center px-10 sm:px-20 py-5"
         >
           {buttons.map((buttonval, index) => {
             return (
