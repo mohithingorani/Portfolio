@@ -1,9 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export function InfoIcons() {
+export function InfoIcons({
+  className
+}:{
+  className?:string
+}) {
   return (
-    <div className="flex w-full justify-between">
+    <div className={`flex w-full justify-between ${className}`}>
       <div className="flex *:invert *:opacity-50 *:hover:opacity-100 w-full justify-center gap-2 ">
         <Link className="block" href={"https://github.com/mohithingorani"}>
           <Image
