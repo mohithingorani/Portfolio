@@ -9,7 +9,7 @@ export default function Home() {
       <div className="flex flex-col w-full lg:w-fit lg:flex-row gap-6 xl:gap-8 p-6   ">
         
         {/* Section Left */}
-        <div className="w-full">
+        <div className="w-full ">
           <LeftSection />
         </div>
 

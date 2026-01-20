@@ -1,4 +1,4 @@
-"use clietn";
+"use client";
 import { useState } from "react";
 import { buttons } from "../data";
 import { CurrentPage } from "../types";
@@ -8,7 +8,7 @@ import PortfolioPage from "./NavPages/PortfolioPage";
 import ContactPage from "./NavPages/ContactPage";
 
 export default function RightSection() {
-  const [currentPage, setCurrentPage] = useState<CurrentPage>(CurrentPage.resume);
+  const [currentPage, setCurrentPage] = useState<CurrentPage>(CurrentPage.portfolio);
 
   return (
     <div className="w-full lg:w-3xl overflow-x-hidden relative p-8 border-[0.2px] border-white/10 rounded-3xl bg-[#1e1e1f] ">
