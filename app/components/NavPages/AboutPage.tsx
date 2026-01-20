@@ -9,7 +9,7 @@ export default function AboutPage() {
       <div className="my-4 ">
         <UnderLine />
       </div>
-      <div className="text-xs leading-5 poppins-normal text-white/70">
+      <div className={`text-[14.4px] leading-5.25 poppins-light  text-white/70 `}>
         I have 2 years of experience as a full-stack developer, primarily
         working with TypeScript-based stacks to build scalable web and AI-driven
         applications. Im currently involved in DevOps practices, including

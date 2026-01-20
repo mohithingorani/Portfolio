@@ -6,7 +6,7 @@ import { InfoIcons } from "./InfoIcons";
 export default function LeftSection() {
   return (
     <div className="lg:sticky lg:top-18 ">
-      <div className="w-full lg:max-w-2xs lg:max-h-180 p-4 md:p-8 flex lg:flex-col justify-start items-center  border-[0.2px] border-white/10 rounded-2xl  bg-[#1e1e1f]">
+      <div className=" lg:max-w-2xs lg:max-h-180 p-4 md:p-8 flex lg:flex-col justify-start items-center  border-[0.2px] border-white/10 rounded-3xl  bg-[#1e1e1f]">
         <AvatarBox />
         <div className="flex flex-col gap-3 lg:gap-0 h-full ml-4 lg:ml-0 lg:block">
           <div className=" text-xl md:text-2xl  lg:my-5 poppins-medium">
