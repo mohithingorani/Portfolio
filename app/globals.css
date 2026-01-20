@@ -71,3 +71,17 @@ body {
   color:  black;
   background: #FACC15;
 }
+
+@keyframes toast-progress {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}
+
+
+.Toastify__toast {
+  background: transparent !important;
+}
