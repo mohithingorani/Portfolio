@@ -19,8 +19,8 @@ export default function AboutPage() {
         while exploring AI, cloud, and system design.
       </div>
 
-      <div className="mt-8 mb-4 text-2xl poppins-semibold">What I'm Doing</div>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="mt-8 mb-4 text-xl md:text-2xl poppins-semibold">What I'm Doing</div>
+      <div className="grid md:grid-cols-2 gap-4">
         {doingData.map((doing, index) => {
           return (
             <DoingBox key={index} data={doing.data} heading={doing.heading} />
