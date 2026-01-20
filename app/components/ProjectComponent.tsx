@@ -14,7 +14,7 @@ export default function ProjectComponent({
   description: string;
 }) {
   return (
-    <Link href={link} className="block">
+    <Link href={link} className="block select-none">
       <div className="group mb-1 cursor-pointer flex flex-col gap-2 w-full">
         <div className="relative w-full aspect-2/1 overflow-hidden rounded-xl">
           <Image

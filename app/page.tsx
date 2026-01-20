@@ -8,6 +8,7 @@ import { CurrentPage } from "./types";
 import AboutPage from "./components/NavPages/AboutPage";
 import ResumePage from "./components/NavPages/Resume";
 import PortfolioPage from "./components/NavPages/PortfolioPage";
+import ContactPage from "./components/NavPages/ContactPage";
 
 export default function Home() {
   const [currentPage, setCurrentPage] = useState<CurrentPage>(
@@ -35,7 +36,7 @@ export default function Home() {
             {buttons.map((buttonval, index) => {
               return (
                 <button
-                  className={`${buttonval === currentPage && "text-yellow-400"}`}
+                  className={`${buttonval === currentPage && "text-yellow-400"} select-none`}
                   key={index}
                   onClick={() => setCurrentPage(buttonval)}
                 >
@@ -47,6 +48,7 @@ export default function Home() {
           {currentPage === CurrentPage.about && <AboutPage />}
           {currentPage===CurrentPage.resume && <ResumePage/>}
           {currentPage===CurrentPage.portfolio && <PortfolioPage/>}
+          {currentPage===CurrentPage.contact && <ContactPage/>}
         </div>
       </div>
     </div>

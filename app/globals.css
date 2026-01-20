@@ -60,3 +60,14 @@ body {
 * {
   -ms-overflow-style: none;
 }
+
+::selection {
+  color: black;
+  background: #FACC15;
+}
+
+/* For Firefox compatibility  */
+::-moz-selection {
+  color:  black;
+  background: #FACC15;
+}
