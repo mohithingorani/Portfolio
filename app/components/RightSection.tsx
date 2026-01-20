@@ -8,7 +8,7 @@ import PortfolioPage from "./NavPages/PortfolioPage";
 import ContactPage from "./NavPages/ContactPage";
 
 export default function RightSection() {
-  const [currentPage, setCurrentPage] = useState<CurrentPage>(CurrentPage.portfolio);
+  const [currentPage, setCurrentPage] = useState<CurrentPage>(CurrentPage.contact);
 
   return (
     <div className="w-full lg:w-3xl overflow-x-hidden relative p-8 border-[0.2px] border-white/10 rounded-3xl bg-[#1e1e1f] ">

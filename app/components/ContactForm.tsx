@@ -30,7 +30,7 @@ export default function ContactForm() {
   return (
     <div>
       <ToastContainer toastClassName={"bg-transparent shadow-none p-0"} closeButton={false}/>
-      <div>
+      <div className="text-white/60 text-sm">
         Contact me directly at mohithingorani2003@gmail.com or through this
         form.
       </div>
@@ -39,7 +39,7 @@ export default function ContactForm() {
         value={email}
           onChange={(e) => setEmail(e.target.value)}
           type="text"
-          className="bg-[#2b2b2c] outline-none border border-white/10 px-4 py-2 rounded-lg"
+          className="bg-[#2b2b2c] text-sm outline-none border border-white/10 px-4 py-2 rounded-lg"
           placeholder="Your Email"
           required
         />
@@ -48,7 +48,7 @@ export default function ContactForm() {
           onChange={(e) => setMessage(e.target.value)}
           rows={5}
           maxLength={5000}
-          className="bg-[#2b2b2c] resize-none outline-none border border-white/10 px-4 py-2 rounded-lg"
+          className="bg-[#2b2b2c] text-sm resize-none outline-none border border-white/10 px-4 py-2 rounded-lg"
           placeholder="Your Message"
           required
         />
