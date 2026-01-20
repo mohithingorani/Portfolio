@@ -5,7 +5,7 @@ import { DoingBox } from "../DoingBox";
 export default function AboutPage() {
   return (
     <div>
-      <div className="poppins-semibold text-3xl">About Me</div>
+      <div className=" poppins-semibold text-3xl">About Me</div>
       <div className="my-4 ">
         <UnderLine />
       </div>
@@ -21,12 +21,15 @@ export default function AboutPage() {
 
       <div className="mt-8 mb-4 text-xl md:text-2xl poppins-semibold">What I'm Doing</div>
       <div className="grid md:grid-cols-2 gap-4">
-        {doingData.map((doing, index) => {
-          return (
-            <DoingBox key={index} data={doing.data} heading={doing.heading} />
-          );
-        })}
-      </div>
+  {doingData.map((doing, index) => (
+    <DoingBox
+      key={index}
+      heading={doing.heading}
+      data={doing.data}
+      Icon={doing.icon}
+    />
+  ))}
+</div>
     </div>
   );
 }

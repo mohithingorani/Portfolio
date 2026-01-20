@@ -24,7 +24,7 @@ export default function RightSection() {
           {buttons.map((buttonval, index) => {
             return (
               <button
-                className={`${buttonval === currentPage && "text-yellow-400"} select-none`}
+                className={`${buttonval === currentPage && "text-yellow-200"} select-none`}
                 key={index}
                 onClick={() => setCurrentPage(buttonval)}
               >
@@ -35,11 +35,11 @@ export default function RightSection() {
         </div>
       </div>
       <div className="hidden lg:block">
-        <div className="absolute text-sm flex gap-8 top-0 right-0 border-[0.2px] border-white/10 bg-[#282829] rounded-tr-3xl *:hover:text-yellow-400 *:cursor-pointer rounded-bl-3xl px-8 py-4 ">
+        <div className="absolute text-sm flex gap-8 top-0 right-0 border-[0.2px] border-white/10 bg-[#282829] rounded-tr-3xl *:hover:text-yellow-200 *:cursor-pointer rounded-bl-3xl px-8 py-4 ">
           {buttons.map((buttonval, index) => {
             return (
               <button
-                className={`${buttonval === currentPage && "text-yellow-400"} select-none`}
+                className={`${buttonval === currentPage && "text-yellow-200"} select-none`}
                 key={index}
                 onClick={() => setCurrentPage(buttonval)}
               >
@@ -49,7 +49,7 @@ export default function RightSection() {
           })}
         </div>
       </div>
-      <div className="h-full ">
+      <div>
       {currentPage === CurrentPage.about && <AboutPage />}
       {currentPage === CurrentPage.resume && <ResumePage />}
       {currentPage === CurrentPage.portfolio && <PortfolioPage />}

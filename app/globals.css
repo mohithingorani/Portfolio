@@ -53,13 +53,13 @@ body {
 
 ::selection {
   color: black;
-  background: #FACC15;
+  background: #fae79b;
 }
 
 /* For Firefox compatibility  */
 ::-moz-selection {
   color:  black;
-  background: #FACC15;
+  background: #fae79b;
 }
 
 @keyframes toast-progress {
@@ -74,4 +74,20 @@ body {
 
 .Toastify__toast {
   background: transparent !important;
+}
+
+@keyframes flash {
+  0% {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  40% {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+.flash-open {
+  animation: flash 0.8s ease-out;
 }

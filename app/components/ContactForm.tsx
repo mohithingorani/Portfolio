@@ -58,7 +58,7 @@ export default function ContactForm() {
           className="
             cursor-pointer
     group relative overflow-hidden
-    hover:border-yellow-400/20
+    hover:border-yellow-200/20
     rounded-xl
     bg-[#1e1e1f]
     border border-white/10
@@ -66,7 +66,7 @@ export default function ContactForm() {
     text-sm font-medium
     text-white/80
     transition-all duration-300
-    hover:text-yellow-400
+    hover:text-yellow-200
   "
         >
           <span className="relative z-10 ">Submit</span>

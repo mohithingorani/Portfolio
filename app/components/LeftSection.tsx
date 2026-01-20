@@ -77,6 +77,7 @@ export default function LeftSection() {
           </div>
         </div>
 
+        {/* DESKTOP CONTENT (UNCHANGED BEHAVIOR) */}
         <div className="hidden lg:block p-6">
           <UserInfo />
           <div className="mt-6">

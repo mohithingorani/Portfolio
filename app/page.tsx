@@ -14,7 +14,7 @@ export default function Home() {
         </div>
 
         {/* Section Right */}
-        <div className="w-full lg:max-w-3xl  flex justify-center items-center">
+        <div className="w-full lg:max-w-3xl xl:max-w-5xl  flex justify-center items-center">
           <RightSection />
         </div>
       </div>
