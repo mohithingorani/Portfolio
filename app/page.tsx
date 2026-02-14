@@ -5,7 +5,7 @@ import RightSection from "./components/RightSection";
 
 export default function Home() {
   return (
-    <div className="flex justify-center lg:py-12 text-white w-full poppins-normal">
+    <div className="flex justify-center lg:py-6 2xl:py-12 text-white w-full poppins-normal">
       <div className="flex w-full  flex-col lg:flex-row gap-3 lg:gap-6 xl:gap-8 p-3 md:p-6 lg:justify-center   ">
         
         {/* Section Left */}

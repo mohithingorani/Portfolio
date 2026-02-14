@@ -48,7 +48,7 @@ export const doingData = [
 
 export const buttons = Object.values(CurrentPage);
 
-export const ALL_DOMAINS = ["Backend", "Devops", "Frontend"] as const;
+export const ALL_DOMAINS = ["Backend", "Devops", "Frontend","AI/ML"] as const;
 
 export type AllDomains = (typeof ALL_DOMAINS)[number];
 
@@ -64,11 +64,11 @@ export const Domains: DomainType[] = [
     data: [85, 50, 70, 30, 90, 85, 80],
     labels: ["Node.js", "Java", "Python", "Kafka", "PostgreSQL", "MongoDB", "Redis"],
   },
-//   {
-//     name: "AI/ML",
-//     data: [80, 80, 50, 60, 20, 65, 55,40],
-//     labels: ["AI Agents", "Python", "LangChain", "Transformers", "Llamaindex", "LLMs", "RAG","LangGraph"],
-//   },
+  {
+    name: "AI/ML",
+    data: [75, 90, 85, 65, 80, 80,85],
+    labels: ["PyTorch", "Python", "LangChain", "Transformers", "LLMs", "RAG","LangGraph"],
+  },
   {
     name: "Devops",
     data: [92, 50, 85, 85, 80, 89, 60],

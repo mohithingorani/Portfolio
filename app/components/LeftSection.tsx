@@ -11,7 +11,7 @@ export default function LeftSection() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="lg:sticky lg:top-18">
+    <div className="lg:sticky lg:top-10 2xl:top-18">
       <div className="lg:max-w-2xs rounded-3xl border border-white/10 bg-[#1e1e1f] overflow-hidden">
         {/* HEADER */}
         <div
@@ -39,7 +39,7 @@ export default function LeftSection() {
       lg:mx-auto
     "
             >
-              Full Stack and ML Developer
+              Full Stack and AI Developer
             </div>
           </div>
 
