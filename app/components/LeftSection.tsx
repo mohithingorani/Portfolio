@@ -11,21 +11,21 @@ export default function LeftSection() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="lg:sticky lg:top-10 2xl:top-18">
-      <div className="lg:max-w-2xs rounded-3xl border border-white/10 bg-[#1e1e1f] overflow-hidden">
+    <div className="xl:sticky xl:top-10 2xl:top-18">
+      <div className="xl:max-w-xl xl:w-max  rounded-3xl border border-white/10 bg-[#1e1e1f] xl:pt-8 overflow-hidden">
         {/* HEADER */}
         <div
           className="
   p-4  relative
   flex items-center gap-4
-  lg:flex-col lg:items-center lg:text-center
+  xl:flex-col xl:items-center xl:text-center
 "
         >
           {/* Avatar */}
           <AvatarBox />
 
           {/* Name + Role */}
-          <div className="flex-1 lg:flex-none">
+          <div className="flex-1 xl:flex-none">
             <div className="text-lg md:text-xl poppins-medium">
               Mohit Hingorani
             </div>
@@ -36,17 +36,17 @@ export default function LeftSection() {
       bg-[#2b2b2c] text-white/70
       px-2 py-1 text-xs md:text-sm
       rounded-md w-fit
-      lg:mx-auto
+      xl:mx-auto
     "
             >
               Full Stack and AI Developer
-            </div>
+</div> 
           </div>
 
           {/* Toggle (mobile only) */}
           <button
             onClick={() => setOpen(!open)}
-            className="lg:hidden absolute top-4 right-4 text-yellow-400"
+            className="xl:hidden absolute top-4 right-4 text-yellow-400"
           >
             <ChevronDown
               className={`transition-transform duration-300 ${
@@ -59,13 +59,12 @@ export default function LeftSection() {
         {/* MOBILE ACCORDION (inside card) */}
         <div
           className={`
-            lg:hidden grid transition-all duration-500 ease-in-out
+            xl:hidden grid transition-all duration-500 ease-in-out
             ${open ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}
           `}
         >
           <div className="overflow-hidden">
-            <div className="h-px bg-white/10 mx-4" />
-
+<div className="h-px bg-white/5 mx-6" />
             <div className="p-4">
               <UserInfo2 />
             </div>
@@ -78,14 +77,11 @@ export default function LeftSection() {
         </div>
 
         {/* DESKTOP CONTENT (UNCHANGED BEHAVIOR) */}
-        <div className="hidden lg:block p-4">
-          <UserInfo />
-          <div className="mt-6">
+<div className="hidden xl:block px-6 pb-6">          <UserInfo />
             <InfoIcons />
           </div>
         </div>
       </div>
-    </div>
   );
 }
 

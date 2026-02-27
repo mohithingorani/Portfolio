@@ -1,5 +1,4 @@
 import {  CalendarIcon, LocationIcon, MailIcon, PhoneIcon } from "./Icons";
-
 export function InfoBox({
   heading,
   value,
@@ -15,6 +14,7 @@ export function InfoBox({
     calendar: CalendarIcon,
     location: LocationIcon,
   };
+
   const Icon = iconMap[icon as keyof typeof iconMap];
   return (
     <div className="flex justify-start items-center gap-5 poppins-normal w-full">
@@ -23,9 +23,15 @@ export function InfoBox({
           {Icon && <Icon className="w-5 h-5 text-yellow-200" />}
         </div>
       </div>
-      <div className="text-xs max-w-full flex flex-col gap-1">
-        <div className="text-white/40 mb-0.5">{heading}</div>
-        <div className="text-white/90">{value}</div>
+
+      {/* Text */}
+      <div className="flex flex-col">
+        <span className="text-xs uppercase tracking-wide text-white/40">
+          {heading}
+        </span>
+        <span className="text-sm text-white/90 font-medium break-all">
+          {value.length > 20 ? value.slice(0, 20) + "..." : value}
+        </span>
       </div>
     </div>
   );

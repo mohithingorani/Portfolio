@@ -8,18 +8,17 @@ export function AvatarBox() {
       bg-linear-to-r from-[#3F3F40] to-[#303030]
       w-20 h-20
       shrink-0
-      lg:w-28 lg:h-28
+      lg:w-36 lg:h-36
     ">
-      <div className="w-26 h-26 relative">
+      <div className="w-32 h-32 relative">
       <Image
         src="/mohit-avatar.png"
         alt="avatar"
         fill 
         className="
           object-contain
-          w-16 h-16
-          md:w-24 md:h-24
-          lg:w-28 lg:h-28
+
+
         "
         priority
       />

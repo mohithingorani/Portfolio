@@ -4,20 +4,22 @@ import { DoingBox } from "../DoingBox";
 
 export default function AboutPage() {
   return (
-    <div className="max-w-5xl mx-auto px-6 py-10">
+    <div className="">
       
       {/* Header */}
-      <div className="space-y-4">
-        <h1 className="poppins-semibold text-3xl md:text-4xl tracking-tight">
-          About Me
-        </h1>
+      <div className="poppins-semibold text-3xl">About Me</div>
 
+      <div className="my-4">
         <UnderLine />
-
-        <p className="text-[15px] leading-7 poppins-light text-white/70 max-w-3xl">
-I’m a full-stack developer with experience of building scalable web and AI-driven applications. I’ve designed Agentic AI systems and RAG pipelines, integrating LLMs with external data to create context-aware solutions. Alongside development, I work with Docker and cloud deployments to build reliable, production-ready systems while strengthening my foundations in AI, distributed systems, and system design as a B.Tech student.
-        </p>
       </div>
+
+      <p className="text-[15px] leading-7 poppins-light text-white/70 max-w-3xl">
+        I’m a full-stack developer with experience of building scalable web and AI-driven applications. 
+        I’ve designed Agentic AI systems and RAG pipelines, integrating LLMs with external data to create 
+        context-aware solutions. Alongside development, I work with Docker and cloud deployments to build 
+        reliable, production-ready systems while strengthening my foundations in AI, distributed systems, 
+        and system design as a B.Tech student.
+      </p>
 
       {/* Divider Space */}
       <div className="mt-12" />
