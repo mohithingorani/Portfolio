@@ -7,15 +7,14 @@ export function AvatarBox() {
       rounded-2xl md:rounded-3xl
       bg-linear-to-r from-[#3F3F40] to-[#303030]
       w-20 h-20
-      md:w-28 md:h-28
-      lg:w-32 lg:h-32
       shrink-0
+      lg:w-28 lg:h-28
     ">
+      <div className="w-26 h-26 relative">
       <Image
         src="/mohit-avatar.png"
         alt="avatar"
-        width={160}
-        height={160}
+        fill 
         className="
           object-contain
           w-16 h-16
@@ -24,6 +23,7 @@ export function AvatarBox() {
         "
         priority
       />
+      </div>
     </div>
   );
 }

@@ -16,7 +16,7 @@ export default function LeftSection() {
         {/* HEADER */}
         <div
           className="
-  p-4 md:p-6 relative
+  p-4  relative
   flex items-center gap-4
   lg:flex-col lg:items-center lg:text-center
 "
@@ -78,7 +78,7 @@ export default function LeftSection() {
         </div>
 
         {/* DESKTOP CONTENT (UNCHANGED BEHAVIOR) */}
-        <div className="hidden lg:block p-6">
+        <div className="hidden lg:block p-4">
           <UserInfo />
           <div className="mt-6">
             <InfoIcons />
