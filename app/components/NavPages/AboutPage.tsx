@@ -13,7 +13,7 @@ export default function AboutPage() {
         <UnderLine />
       </div>
 
-      <p className="text-[15px] leading-7 poppins-light text-white/70 max-w-2xl">
+      <p className="text-[15px] leading-7 poppins-light text-white/70 max-w-3xl">
         I'm a full-stack developer with experience of building scalable web and AI-driven applications. 
         I've designed Agentic AI systems and RAG pipelines, integrating LLMs with external data to create 
         context-aware solutions. Alongside development, I work with Docker and cloud deployments to build 
@@ -25,11 +25,11 @@ export default function AboutPage() {
       <div className="mt-12" />
 
       {/* GitHub Activity */}
-      <div className="space-y-6">
+      <div className="space-y-6 pb-24">
         <h2 className="text-xl md:text-2xl poppins-semibold tracking-wide">
           GitHub Activity
         </h2>
-        <div className="overflow-x-auto">
+        <div className="overflow-visible">
         <GitHubContributions username="mohithingorani" />
         </div>
       </div>

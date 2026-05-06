@@ -16,7 +16,7 @@ interface MonthData {
   columnIndex: number;
 }
 
-const CELL_SIZE = 12;
+const CELL_SIZE = 14;
 
 export default function GitHubContributions({ username = "mohithingorani" }: GitHubContributionsProps) {
   const [data, setData] = useState<DayData[]>([]);
@@ -131,7 +131,7 @@ export default function GitHubContributions({ username = "mohithingorani" }: Git
   const CELL_GAP = 3;
 
   return (
-    <div className="relative space-y-4">
+    <div className="relative space-y-4 overflow-visible">
       <div className="overflow-x-auto">
         <div className="relative min-w-max">
           {months.length > 0 && (
@@ -149,7 +149,7 @@ export default function GitHubContributions({ username = "mohithingorani" }: Git
           )}
           <div 
             ref={containerRef}
-            className="flex gap-[3px] pb-2 pt-5 min-w-max"
+            className="flex gap-0.75 pb-2 pt-5 min-w-max"
             onMouseMove={handleMouseMove}
             role="grid"
             aria-label="GitHub contributions"
@@ -157,7 +157,7 @@ export default function GitHubContributions({ username = "mohithingorani" }: Git
             {weeks.map((week, weekIdx) => (
               <div 
                 key={weekIdx} 
-                className="flex flex-col gap-[3px]"
+                className="flex flex-col gap-0.75"
                 role="row"
               >
                 {week.map((day, dayIdx) => (
@@ -167,7 +167,7 @@ export default function GitHubContributions({ username = "mohithingorani" }: Git
                     tabIndex={day.count >= 0 ? 0 : -1}
                     aria-label={day.count >= 0 ? `${day.count} contributions on ${formatDate(day.date)}` : "No data"}
                     className={`
-                      transition-all duration-200 rounded-[2px]
+                      transition-all duration-200 rounded-xs
                       ${day.count === -1 ? "invisible" : getColor(day.count)}
                       ${day.count >= 0 ? "hover:ring-1 hover:ring-yellow-200/50 hover:scale-110 cursor-pointer focus:outline-none focus:ring-2 focus:ring-yellow-200/50" : ""}
                     `}
@@ -201,12 +201,12 @@ export default function GitHubContributions({ username = "mohithingorani" }: Git
 
       <div className="flex items-center justify-center gap-4 text-xs text-white/50">
         <span>Less</span>
-        <div className="flex gap-[3px]">
-          <div className="w-3 h-3 rounded-[2px] bg-white/5" />
-          <div className="w-3 h-3 rounded-[2px] bg-yellow-200/30" />
-          <div className="w-3 h-3 rounded-[2px] bg-yellow-200/50" />
-          <div className="w-3 h-3 rounded-[2px] bg-yellow-200/70" />
-          <div className="w-3 h-3 rounded-[2px] bg-yellow-200" />
+        <div className="flex gap-0.75">
+          <div className="w-3 h-3 rounded-xs bg-white/5" />
+          <div className="w-3 h-3 rounded-xs bg-yellow-200/30" />
+          <div className="w-3 h-3 rounded-xs bg-yellow-200/50" />
+          <div className="w-3 h-3 rounded-xs bg-yellow-200/70" />
+          <div className="w-3 h-3 rounded-xs bg-yellow-200" />
         </div>
         <span>More</span>
         <a 
