@@ -21,7 +21,7 @@ export function InfoBox({
     if (icon === "mail") {
       return (
         <a
-          href={`mailto:${value}`}
+          href="mailto:mohithingorani2003@gmail.com"
           className="text-sm text-white/90 hover:underline font-medium"
         >
           {value}
