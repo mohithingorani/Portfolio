@@ -16,7 +16,7 @@ interface MonthData {
   columnIndex: number;
 }
 
-const CELL_SIZE = 12;
+const CELL_SIZE = 15;
 
 export default function GitHubContributions({ username = "mohithingorani" }: GitHubContributionsProps) {
   const [data, setData] = useState<DayData[]>([]);
