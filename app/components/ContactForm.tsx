@@ -20,11 +20,18 @@ export default function ContactForm() {
   async function onsubmit(e: React.FormEvent) {
     e.preventDefault();
     if (!email || !message) return;
-    const mail = await sendMail({ email, message });
-    if (mail) {
-      notify();
-      setMessage("");
-      setEmail("");
+    try {
+      const mail = await sendMail({ email, message });
+      if (mail) {
+        notify();
+        setMessage("");
+        setEmail("");
+      } else {
+        toast("Failed to send message. Please try again.", { autoClose: 4000 });
+      }
+    } catch (error) {
+      console.error("Error sending mail:", error);
+      toast("Error sending message. Please try again.", { autoClose: 4000 });
     }
   }
   return (

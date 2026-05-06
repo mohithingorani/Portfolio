@@ -16,6 +16,35 @@ export function InfoBox({
   };
 
   const Icon = iconMap[icon as keyof typeof iconMap];
+
+  const renderValue = () => {
+    if (icon === "mail") {
+      return (
+        <a
+          href={`mailto:${value}`}
+          className="text-sm text-white/90 hover:underline font-medium"
+        >
+          {value}
+        </a>
+      );
+    }
+    if (icon === "phone") {
+      return (
+        <a
+          href={`tel:${value.replace(/-/g, "")}`}
+          className="text-sm text-white/90 hover:underline font-medium"
+        >
+          {value}
+        </a>
+      );
+    }
+    return (
+      <span className="text-sm text-white/90 font-medium break-all">
+        {value.length > 20 ? value.slice(0, 20) + "..." : value}
+      </span>
+    );
+  };
+
   return (
     <div className="flex justify-start items-center gap-5 poppins-normal w-full">
       <div className="relative rounded-xl p-px bg-linear-to-br from-white/20 via-white/5 to-transparent ">
@@ -29,9 +58,7 @@ export function InfoBox({
         <span className="text-xs uppercase tracking-wide text-white/40">
           {heading}
         </span>
-        <span className="text-sm text-white/90 font-medium break-all">
-          {value.length > 20 ? value.slice(0, 20) + "..." : value}
-        </span>
+        {renderValue()}
       </div>
     </div>
   );
