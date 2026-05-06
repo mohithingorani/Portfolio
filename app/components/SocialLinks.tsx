@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export function InfoIcons({
+export function SocialLinks({
   className
 }:{
   className?:string

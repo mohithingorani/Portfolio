@@ -5,7 +5,7 @@ import { ChevronDown } from "lucide-react";
 import { infoData } from "../data";
 import { AvatarBox } from "./AvatarBox";
 import { InfoBox } from "./InfoBox";
-import { InfoIcons } from "./InfoIcons";
+import { SocialLinks } from "./SocialLinks";
 
 export default function LeftSection() {
   const [open, setOpen] = useState(false);
@@ -71,14 +71,14 @@ export default function LeftSection() {
 
             {/* Footer icons */}
             <div className="border-t border-white/10 p-4 flex justify-center">
-              <InfoIcons />
+              <SocialLinks />
             </div>
           </div>
         </div>
 
         {/* DESKTOP CONTENT (UNCHANGED BEHAVIOR) */}
 <div className="hidden xl:block px-6 pb-6">          <UserInfo />
-            <InfoIcons />
+            <SocialLinks />
           </div>
         </div>
       </div>

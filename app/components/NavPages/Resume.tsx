@@ -31,7 +31,7 @@ export default function ResumePage() {
         </div>
         <div className="relative mb-8 pl-6 poppins-normal">
           <span className="absolute -left-6.5 top-1 w-3 h-3 bg-yellow-200/50 rounded-full" />
-          <span className="absolute -left-5.75 top-[6.3px] w-1.5 h-1.5 bg-yellow-100 rounded-full" />
+          <span className="absolute -left-5.75 top-1.5 w-1.5 h-1.5 bg-yellow-100 rounded-full" />
           <h4 className="font-medium text-sm md:text-lg text-white/95">Aadharshila Vidyapeeth</h4>
           <span className="text-yellow-200/70 text-xs md:text-sm  ">2021 - 2022</span>
           <p className="text-white/60 text-xs md:text-sm ">
