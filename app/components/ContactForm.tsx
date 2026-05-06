@@ -34,21 +34,21 @@ export default function ContactForm() {
         Contact me directly at mohithingorani2003@gmail.com or through this
         form.
       </div>
-      <form onSubmit={onsubmit} className="flex flex-col mt-6 gap-4 max-w-2xl">
-<input
+<form onSubmit={onsubmit} className="flex flex-col mt-6 gap-4 w-full">
+        <input
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           type="text"
-          className="bg-[#2b2b2c] text-base outline-none border border-white/10 px-4 py-2 rounded-lg"
+          className="bg-[#2b2b2c] text-base outline-none border border-white/10 px-4 py-3 rounded-lg w-full"
           placeholder="Your Email"
           required
         />
         <textarea
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          rows={5}
+          rows={8}
           maxLength={5000}
-          className="bg-[#2b2b2c] text-base resize-none outline-none border border-white/10 px-4 py-2 rounded-lg"
+          className="bg-[#2b2b2c] text-base resize-none outline-none border border-white/10 px-4 py-3 rounded-lg w-full"
           placeholder="Your Message"
           required
         />
