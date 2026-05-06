@@ -11,8 +11,8 @@ export default function LeftSection() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="xl:sticky xl:top-10 2xl:top-18">
-      <div className="xl:max-w-xl xl:w-max  rounded-3xl border border-white/10 bg-[#1e1e1f] xl:pt-8 overflow-hidden">
+    <div className="xl:sticky xl:top-10 2xl:top-18 transition-all duration-200">
+      <div className="xl:max-w-xl xl:w-max rounded-3xl border border-white/10 bg-[#1e1e1f] xl:pt-8 overflow-hidden transition-all duration-200">
         {/* HEADER */}
         <div
           className="

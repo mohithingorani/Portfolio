@@ -45,9 +45,9 @@ export default function RightSection() {
 
   return (
     <div className="w-full relative p-4 md:p-5 lg:p-8 border-[0.2px] border-white/10 rounded-3xl bg-[#1e1e1f]">
-      <div className="block lg:hidden fixed w-full bottom-0 left-0 z-50">
+      <div className="block lg:hidden fixed w-full bottom-0 left-0 z-50 transition-all duration-200">
         <div
-          className="flex rounded-t-xl poppins-light border-white/20 backdrop-blur-[15px] bg-[rgba(43,43,44,0.75)] border text-base md:text-lg justify-between items-center px-6 sm:px-20 py-5"
+          className="flex rounded-t-xl poppins-light border-white/20 backdrop-blur-[15px] bg-[rgba(43,43,44,0.75)] border text-base md:text-lg justify-between items-center px-6 sm:px-20 py-5 transition-all duration-200"
         >
           {buttons.map((buttonval, index) => (
             <button
