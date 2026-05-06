@@ -3,7 +3,7 @@ import { CurrentPage } from "./types";
 export type Info = { icon: string; heading: string; value: string }[];
 
 export const infoData: Info = [
-  { icon: "mail", heading: "EMAIL", value: "mohithingorani20003@gmail.com" },
+  { icon: "mail", heading: "EMAIL", value: "mohithingorani200..." },
   { icon: "phone", heading: "PHONE", value: "+91-9811033533" },
   { icon: "calendar", heading: "BIRTHDAY", value: "DEC 16, 2003" },
   { icon: "location", heading: "LOCATION", value: "New Delhi, India" },

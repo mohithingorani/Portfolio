@@ -12,10 +12,10 @@ export default function ContactPage() {
       </div>
       <div className="mt-6 space-y-6">
         <a
-          href="mailto:mohithingorani20003@gmail.com"
+          href="mailto:mohithingorani2003@gmail.com"
           className="text-base text-yellow-200 hover:text-yellow-100 hover:underline transition-all"
         >
-          mohithingorani20003@gmail.com
+          mohithingorani2003@gmail.com
         </a>
         <ContactForm />
       </div>
