@@ -13,7 +13,7 @@ export default function ContactPage() {
       <div className="mt-6 space-y-6">
         <a
           href="mailto:mohithingorani20003@gmail.com"
-          className="text-yellow-200 hover:text-yellow-100 hover:underline transition-all"
+          className="text-base text-yellow-200 hover:text-yellow-100 hover:underline transition-all"
         >
           mohithingorani20003@gmail.com
         </a>

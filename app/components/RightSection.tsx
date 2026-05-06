@@ -65,7 +65,7 @@ export default function RightSection() {
           {buttons.map((buttonval, index) => (
             <button
               ref={(el) => { buttonRefs.current[index] = el; }}
-              className={`${buttonval === currentPage ? "text-yellow-200" : "text-white/70"} select-none transition-none relative z-10`}
+              className={`${buttonval === currentPage ? "text-yellow-200 drop-shadow-[0_0_8px_rgba(254,240,138,0.5)]" : "text-white/70 hover:drop-shadow-[0_0_8px_rgba(254,240,138,0.3)]"} select-none transition-none relative z-10`}
               key={index}
               onClick={() => handlePageChange(buttonval)}
             >

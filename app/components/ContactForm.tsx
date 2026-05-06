@@ -30,25 +30,25 @@ export default function ContactForm() {
   return (
     <div className="">
       <ToastContainer toastClassName={"bg-transparent shadow-none p-0"} closeButton={false}/>
-      <div className="text-white/60 text-sm">
+      <div className="text-white/60 text-base">
         Contact me directly at mohithingorani2003@gmail.com or through this
         form.
       </div>
-      <form onSubmit={onsubmit} className="flex flex-col mt-6 gap-4 max-w-xl">
-        <input
-        value={email}
+      <form onSubmit={onsubmit} className="flex flex-col mt-6 gap-4 max-w-2xl">
+<input
+          value={email}
           onChange={(e) => setEmail(e.target.value)}
           type="text"
-          className="bg-[#2b2b2c] text-sm outline-none border border-white/10 px-4 py-2 rounded-lg"
+          className="bg-[#2b2b2c] text-base outline-none border border-white/10 px-4 py-2 rounded-lg"
           placeholder="Your Email"
           required
         />
         <textarea
-        value={message}
+          value={message}
           onChange={(e) => setMessage(e.target.value)}
           rows={5}
           maxLength={5000}
-          className="bg-[#2b2b2c] text-sm resize-none outline-none border border-white/10 px-4 py-2 rounded-lg"
+          className="bg-[#2b2b2c] text-base resize-none outline-none border border-white/10 px-4 py-2 rounded-lg"
           placeholder="Your Message"
           required
         />
@@ -63,7 +63,7 @@ export default function ContactForm() {
     bg-[#1e1e1f]
     border border-white/10
     px-6 py-3
-    text-sm font-medium
+    text-base font-medium
     text-white/80
     transition-all duration-300
     hover:text-yellow-200
