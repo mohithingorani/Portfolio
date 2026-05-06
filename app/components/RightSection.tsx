@@ -1,5 +1,6 @@
 "use client";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
+import { motion, useAnimationControls } from "framer-motion";
 import { buttons } from "../data";
 import { CurrentPage } from "../types";
 import AboutPage from "./NavPages/AboutPage";
@@ -12,12 +13,34 @@ export default function RightSection() {
     CurrentPage.about,
   );
   const [isAnimating, setIsAnimating] = useState(false);
+  const buttonRefs = useRef<(HTMLButtonElement | null)[]>([]);
+  const controls = useAnimationControls();
+
+  const activeIndex = buttons.indexOf(currentPage);
+
+  useEffect(() => {
+    const activeButton = buttonRefs.current[activeIndex];
+    if (activeButton) {
+      const parent = activeButton.parentElement;
+      if (parent) {
+        const parentRect = parent.getBoundingClientRect();
+        const buttonRect = activeButton.getBoundingClientRect();
+        const left = buttonRect.left - parentRect.left;
+        const width = buttonRect.width;
+        controls.start({
+          left: `${left}px`,
+          width: `${width}px`,
+          transition: { duration: 0.15, ease: "easeOut" },
+        });
+      }
+    }
+  }, [currentPage, activeIndex, controls]);
 
   const handlePageChange = (page: CurrentPage) => {
     if (page === currentPage) return;
     setIsAnimating(true);
     setCurrentPage(page);
-    setTimeout(() => setIsAnimating(false), 200);
+    setTimeout(() => setIsAnimating(false), 350);
   };
 
   return (
@@ -41,13 +64,19 @@ export default function RightSection() {
         <div className="absolute w-lg text-lg flex justify-around top-0 right-0 border-[0.2px] border-white/10 bg-[#282829] rounded-tr-3xl *:hover:text-yellow-200 *:cursor-pointer *:transition-none rounded-bl-3xl px-8 py-4">
           {buttons.map((buttonval, index) => (
             <button
-              className={`${buttonval === currentPage && "text-yellow-200"} select-none transition-none`}
+              ref={(el) => { buttonRefs.current[index] = el; }}
+              className={`${buttonval === currentPage ? "text-yellow-200" : "text-white/70"} select-none transition-none relative z-10`}
               key={index}
               onClick={() => handlePageChange(buttonval)}
             >
               {buttonval}
             </button>
           ))}
+          <motion.div
+            className="absolute h-0.5 bg-yellow-200 rounded-full"
+            style={{ top: "100%", transform: "translateY(1px)" }}
+            animate={controls}
+          />
         </div>
       </div>
       <div className={`lg:pb-0 pb-10 ${isAnimating ? "content-fade-in" : ""}`}>

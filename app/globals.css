@@ -93,13 +93,13 @@ body {
 }
 
 .content-fade-in {
-  animation: content-fade 0.2s ease-out;
+  animation: content-fade 0.35s ease-out;
 }
 
 @keyframes content-fade {
   from {
     opacity: 0;
-    transform: translateY(5px);
+    transform: translateY(8px);
   }
   to {
     opacity: 1;
