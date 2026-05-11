@@ -2,8 +2,54 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Mohit Hingorani",
-  description: "Portfolio Website",
+  metadataBase: new URL("https://mohit.systems"),
+  title: {
+    default: "Mohit Hingorani | Full Stack & AI Developer",
+    template: "%s | Mohit Hingorani",
+  },
+  description:
+    "Full Stack & AI Developer specializing in React, Node.js, Python, and AI/ML. Building innovative solutions with modern technologies.",
+  keywords: [
+    "Full Stack Developer",
+    "AI Developer",
+    "React",
+    "Node.js",
+    "Python",
+    "Machine Learning",
+    "Portfolio",
+  ],
+  authors: [{ name: "Mohit Hingorani" }],
+  creator: "Mohit Hingorani",
+  publisher: "Mohit Hingorani",
+  openGraph: {
+    title: "Mohit Hingorani | Full Stack & AI Developer",
+    description:
+      "Full Stack & AI Developer specializing in React, Node.js, Python, and AI/ML.",
+    url: "https://mohit.systems",
+    siteName: "Mohit Hingorani Portfolio",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "https://mohit.systems/api/og",
+        width: 1200,
+        height: 630,
+        alt: "Mohit Hingorani Portfolio",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mohit Hingorani | Full Stack & AI Developer",
+    description:
+      "Full Stack & AI Developer specializing in React, Node.js, Python, and AI/ML.",
+    images: ["https://mohit.systems/api/og"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  themeColor: "#121212",
 };
 
 export default function RootLayout({
