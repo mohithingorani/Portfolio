@@ -11,8 +11,8 @@ export default function PortfolioPage() {
       <div className=" mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
         <ProjectComponent image="voltex.JPG" heading="Voltex - Self Hosted Paas" description="Devops" link="https://github.com/mohithingorani/Platform-as-a-Service" />
         <ProjectComponent image="metaverse.JPG" heading="Matrix - 2D Metaverse" description="Full Stack" link="https://github.com/mohithingorani/2D-METAVERSE" />
-           <ProjectComponent image="codepilot.png" heading="CodePilot - Online Code Editor" description="Full Stack" link="https://github.com/mohithingorani/code-pilot" />
-        <ProjectComponent image="social.JPG" heading="UnivoChat - Social Network" description="Full Stack" link="https://github.com/mohithingorani/SOCIAL-NETWORK" />
+           <ProjectComponent image="codepilot.png" heading="CodePilot - Online Code Editor" description="Full Stack" link="https://codepilot.mohit.systems/" />
+        <ProjectComponent image="social.JPG" heading="UnivoChat - Social Network" description="Full Stack" link="https://univo-chat.vercel.app/" />
       
 
         <ProjectComponent image="wellnest.JPG" heading="WellNest - Online Therapy" description="Full Stack" link="https://github.com/mohithingorani/WellNest-Frontend" />
